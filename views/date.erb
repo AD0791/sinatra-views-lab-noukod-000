@@ -1,12 +1,1 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sinatra views/routes - date</title>
-  </head>
-  <body>
-    <% require 'date' %>
-    <% d = DateTime.now %>
-    <p><%= "The date is #{d.strftime("%d/%m/%Y %H:%M")}"  %></p>
-  </body>
-</html>
+<p>The date is <%=Date.today.strftime("%A, %B %d, %Y")%></p>
