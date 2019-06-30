@@ -5,6 +5,8 @@
     <title>Sinatra views/routes - date</title>
   </head>
   <body>
-
+    <% require 'date' %>
+    <% d = DateTime.now %>
+    <h1><%= "The date is #{d.strftime("%d/%m/%Y %H:%M")}"  %></h1>
   </body>
 </html>
